@@ -116,3 +116,7 @@ Migrating to AddDeletedAtToStocks (20180425091307)
             FROM sqlite_temp_master
             WHERE name='index_stocks_on_bearer_id' AND type='index'
 [0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35mSQL (6.7ms)[0m  [1m[31mDELETE FROM "bearers"[0m
+  [1m[35mSQL (6.6ms)[0m  [1m[31mDELETE FROM "market_prices"[0m
+  [1m[36mMarketPrice Load (0.2ms)[0m  [1m[34mSELECT "market_prices".* FROM "market_prices"[0m
