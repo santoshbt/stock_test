@@ -858,3 +858,476 @@
   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock Company 1"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-24 18:19:57.483934"], ["updated_at", "2018-04-24 18:19:57.483934"]]
   [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
   [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 04:28:00.581277"], ["updated_at", "2018-04-25 04:28:00.581277"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (9.9ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 04:28:00.586379"], ["updated_at", "2018-04-25 04:28:00.586379"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 04:28:00.599659"], ["updated_at", "2018-04-25 04:28:00.599659"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 04:28:00.615572"], ["updated_at", "2018-04-25 04:28:00.615572"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 04:28:45.831895"], ["updated_at", "2018-04-25 04:28:45.831895"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (5.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 04:28:45.841228"], ["updated_at", "2018-04-25 04:28:45.841228"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 04:28:45.843744"], ["updated_at", "2018-04-25 04:28:45.843744"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 04:28:45.855868"], ["updated_at", "2018-04-25 04:28:45.855868"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:29:37.460212"], ["updated_at", "2018-04-25 04:29:37.460212"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:29:37.466353"], ["updated_at", "2018-04-25 04:29:37.466353"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:29:37.469784"], ["updated_at", "2018-04-25 04:29:37.469784"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:31:11.346735"], ["updated_at", "2018-04-25 04:31:11.346735"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (5.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:31:11.356468"], ["updated_at", "2018-04-25 04:31:11.356468"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 2515], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:31:11.360384"], ["updated_at", "2018-04-25 04:31:11.360384"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:33:21.173547"], ["updated_at", "2018-04-25 04:33:21.173547"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (5.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:33:21.183495"], ["updated_at", "2018-04-25 04:33:21.183495"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 2515], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:33:21.187229"], ["updated_at", "2018-04-25 04:33:21.187229"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["id", 1], ["value_cents", 2015], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:33:21.202447"], ["updated_at", "2018-04-25 04:33:21.202447"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:47:19.604968"], ["updated_at", "2018-04-25 04:47:19.604968"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:47:19.614907"], ["updated_at", "2018-04-25 04:47:19.614907"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 3015], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:47:19.627343"], ["updated_at", "2018-04-25 04:47:19.627343"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:49:38.256907"], ["updated_at", "2018-04-25 04:49:38.256907"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:49:38.267182"], ["updated_at", "2018-04-25 04:49:38.267182"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2530], ["created_at", "2018-04-25 04:49:38.269285"], ["updated_at", "2018-04-25 04:49:38.269285"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:49:38.272285"], ["updated_at", "2018-04-25 04:49:38.272285"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:49:51.347862"], ["updated_at", "2018-04-25 04:49:51.347862"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:49:51.360221"], ["updated_at", "2018-04-25 04:49:51.360221"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2530], ["created_at", "2018-04-25 04:49:51.363990"], ["updated_at", "2018-04-25 04:49:51.363990"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:49:51.368998"], ["updated_at", "2018-04-25 04:49:51.368998"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:50:04.602106"], ["updated_at", "2018-04-25 04:50:04.602106"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:50:04.612042"], ["updated_at", "2018-04-25 04:50:04.612042"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2530], ["created_at", "2018-04-25 04:50:04.613893"], ["updated_at", "2018-04-25 04:50:04.613893"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 3015], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:50:04.627763"], ["updated_at", "2018-04-25 04:50:04.627763"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:50:15.194401"], ["updated_at", "2018-04-25 04:50:15.194401"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:50:15.204620"], ["updated_at", "2018-04-25 04:50:15.204620"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2530], ["created_at", "2018-04-25 04:50:15.206897"], ["updated_at", "2018-04-25 04:50:15.206897"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["id", 2], ["value_cents", 3015], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:50:15.221242"], ["updated_at", "2018-04-25 04:50:15.221242"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:51:41.489181"], ["updated_at", "2018-04-25 04:51:41.489181"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:51:41.499824"], ["updated_at", "2018-04-25 04:51:41.499824"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2530], ["created_at", "2018-04-25 04:51:41.502088"], ["updated_at", "2018-04-25 04:51:41.502088"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:51:41.510627"], ["updated_at", "2018-04-25 04:51:41.510627"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:52:35.758757"], ["updated_at", "2018-04-25 04:52:35.758757"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:52:35.768971"], ["updated_at", "2018-04-25 04:52:35.768971"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2530], ["created_at", "2018-04-25 04:52:35.770915"], ["updated_at", "2018-04-25 04:52:35.770915"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:52:35.774229"], ["updated_at", "2018-04-25 04:52:35.774229"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:52:43.743210"], ["updated_at", "2018-04-25 04:52:43.743210"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:52:43.753276"], ["updated_at", "2018-04-25 04:52:43.753276"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2530], ["created_at", "2018-04-25 04:52:43.755230"], ["updated_at", "2018-04-25 04:52:43.755230"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:52:43.762710"], ["updated_at", "2018-04-25 04:52:43.762710"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:53:09.542413"], ["updated_at", "2018-04-25 04:53:09.542413"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:53:09.552635"], ["updated_at", "2018-04-25 04:53:09.552635"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2530], ["created_at", "2018-04-25 04:53:09.554495"], ["updated_at", "2018-04-25 04:53:09.554495"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:53:09.561736"], ["updated_at", "2018-04-25 04:53:09.561736"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:53:23.975568"], ["updated_at", "2018-04-25 04:53:23.975568"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:53:23.985393"], ["updated_at", "2018-04-25 04:53:23.985393"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2530], ["created_at", "2018-04-25 04:53:23.987188"], ["updated_at", "2018-04-25 04:53:23.987188"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:53:23.995646"], ["updated_at", "2018-04-25 04:53:23.995646"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:56:09.841758"], ["updated_at", "2018-04-25 04:56:09.841758"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:56:09.851960"], ["updated_at", "2018-04-25 04:56:09.851960"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2530], ["created_at", "2018-04-25 04:56:09.854320"], ["updated_at", "2018-04-25 04:56:09.854320"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2290], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2290], ["created_at", "2018-04-25 04:56:09.856223"], ["updated_at", "2018-04-25 04:56:09.856223"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["id", 3], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 04:56:09.864442"], ["updated_at", "2018-04-25 04:56:09.864442"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" IS NULL LIMIT ?[0m  [["currency", "USD"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" IS NULL LIMIT ?[0m  [["currency", "USD"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" IS NULL LIMIT ?[0m  [["currency", "USD"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 05:04:51.978510"], ["updated_at", "2018-04-25 05:04:51.978510"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 05:04:51.988597"], ["updated_at", "2018-04-25 05:04:51.988597"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2530], ["created_at", "2018-04-25 05:04:51.990603"], ["updated_at", "2018-04-25 05:04:51.990603"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2290], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2290], ["created_at", "2018-04-25 05:04:51.992507"], ["updated_at", "2018-04-25 05:04:51.992507"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["id", 3], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 05:04:52.000680"], ["updated_at", "2018-04-25 05:04:52.000680"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 05:07:23.898240"], ["updated_at", "2018-04-25 05:07:23.898240"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35m (5.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 05:07:23.908774"], ["updated_at", "2018-04-25 05:07:23.908774"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" IS NULL AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["id", 1], ["value_cents", 2], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 05:07:23.917940"], ["updated_at", "2018-04-25 05:07:23.917940"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2530], ["created_at", "2018-04-25 05:07:23.920522"], ["updated_at", "2018-04-25 05:07:23.920522"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2290], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2290], ["created_at", "2018-04-25 05:07:23.922901"], ["updated_at", "2018-04-25 05:07:23.922901"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["id", 3], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1939], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 05:07:23.927064"], ["updated_at", "2018-04-25 05:07:23.927064"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
