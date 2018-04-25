@@ -48,3 +48,71 @@ Migrating to CreateMarketPrices (20180424170854)
             FROM sqlite_temp_master
             WHERE name='index_stocks_on_bearer_id' AND type='index'
 [0m
+  [1m[36mBearer Load (0.3ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE (name = 'Tina') ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mBearer Load (0.2ms)[0m  [1m[34mSELECT "bearers".* FROM "bearers"[0m
+  [1m[36mBearer Load (0.2ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina"], ["LIMIT", 1]]
+  [1m[35mSQL (6.2ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina"], ["created_at", "2018-04-25 06:31:25.270234"], ["updated_at", "2018-04-25 06:31:25.270234"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mStock Load (0.5ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[36mStock Load (0.3ms)[0m  [1m[34mSELECT  "stocks".* FROM "stocks" WHERE "stocks"."deleted_at" IS NULL ORDER BY "stocks"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBearer Load (0.2ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBearer Load (0.2ms)[0m  [1m[34mSELECT "bearers".* FROM "bearers"[0m
+  [1m[35mSQL (6.8ms)[0m  [1m[31mDELETE FROM "bearers"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDeletedAtToStocks (20180425091307)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "stocks" ADD "deleted_at" datetime[0m
+  [1m[35m (0.0ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_stocks_on_market_price_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_stocks_on_market_price_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_stocks_on_bearer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_stocks_on_bearer_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_stocks_on_deleted_at" ON "stocks" ("deleted_at")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180425091307"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_stocks_on_deleted_at' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_stocks_on_deleted_at' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_stocks_on_market_price_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_stocks_on_market_price_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_stocks_on_bearer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_stocks_on_bearer_id' AND type='index'
+[0m

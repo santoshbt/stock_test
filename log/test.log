@@ -1331,3 +1331,2004 @@
   [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1939], ["created_at", "2018-04-25 05:07:23.927064"], ["updated_at", "2018-04-25 05:07:23.927064"]]
   [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
   [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:44:31.632583"], ["updated_at", "2018-04-25 05:44:31.632583"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? AND ("bearers"."id" != ?) LIMIT ?[0m  [["name", "John"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:44:31.640699"], ["updated_at", "2018-04-25 05:44:31.640699"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? AND ("bearers"."id" != ?) LIMIT ?[0m  [["name", "Tina"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:44:31.644464"], ["updated_at", "2018-04-25 05:44:31.644464"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" IS NULL AND ("bearers"."id" != ?) LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:44:31.652039"], ["updated_at", "2018-04-25 05:44:31.652039"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:44:31.670725"], ["updated_at", "2018-04-25 05:44:31.670725"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:46:30.569917"], ["updated_at", "2018-04-25 05:46:30.569917"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) AND ("bearers"."id" != ?) LIMIT ?[0m  [["name", "John"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:46:30.579626"], ["updated_at", "2018-04-25 05:46:30.579626"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) AND ("bearers"."id" != ?) LIMIT ?[0m  [["name", "Tina"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:46:30.583912"], ["updated_at", "2018-04-25 05:46:30.583912"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" IS NULL AND ("bearers"."id" != ?) LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:46:30.592265"], ["updated_at", "2018-04-25 05:46:30.592265"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:46:30.614926"], ["updated_at", "2018-04-25 05:46:30.614926"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:47:08.753335"], ["updated_at", "2018-04-25 05:47:08.753335"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) AND ("bearers"."id" != ?) LIMIT ?[0m  [["name", "John"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:47:08.763105"], ["updated_at", "2018-04-25 05:47:08.763105"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) AND ("bearers"."id" != ?) LIMIT ?[0m  [["name", "Tina"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:47:08.766508"], ["updated_at", "2018-04-25 05:47:08.766508"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" IS NULL AND ("bearers"."id" != ?) LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:47:08.774173"], ["updated_at", "2018-04-25 05:47:08.774173"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) LIMIT ?[0m  [["name", "jOHN"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE LOWER("bearers"."name") = LOWER(?) LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:47:08.795913"], ["updated_at", "2018-04-25 05:47:08.795913"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:48:16.694719"], ["updated_at", "2018-04-25 05:48:16.694719"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? AND ("bearers"."id" != ?) LIMIT ?[0m  [["name", "John"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:48:16.704340"], ["updated_at", "2018-04-25 05:48:16.704340"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? AND ("bearers"."id" != ?) LIMIT ?[0m  [["name", "Tina"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:48:16.707820"], ["updated_at", "2018-04-25 05:48:16.707820"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" IS NULL AND ("bearers"."id" != ?) LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:48:16.715982"], ["updated_at", "2018-04-25 05:48:16.715982"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "jOHN"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-25 05:48:16.722451"], ["updated_at", "2018-04-25 05:48:16.722451"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+No serializer found for resource: "Bearer must exist"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.15ms)
+Completed 422 Unprocessable Entity in 26ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+No serializer found for resource: "Bearer must exist"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.07ms)
+Completed 422 Unprocessable Entity in 27ms (Views: 4.4ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+No serializer found for resource: "Bearer must exist"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.08ms)
+Completed 422 Unprocessable Entity in 20ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.5ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE (name = 'Tina Rudwik') ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMarketPrice Load (0.6ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE (currency = 'EUR' and value_cents = '2000') ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" IS NULL AND "market_prices"."value_cents" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+No serializer found for resource: "Bearer must exist"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.06ms)
+Completed 422 Unprocessable Entity in 67ms (Views: 3.8ms | ActiveRecord: 2.5ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE (name = 'Tina Rudwik') ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE (currency = 'EUR' and value_cents = '2000') ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" IS NULL AND "market_prices"."value_cents" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+No serializer found for resource: "Bearer must exist"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.07ms)
+Completed 422 Unprocessable Entity in 65ms (Views: 3.7ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 4ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 06:34:19.134270"], ["updated_at", "2018-04-25 06:34:19.134270"]]
+  [1m[36mMarketPrice Load (5.9ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 06:34:19.149766"], ["updated_at", "2018-04-25 06:34:19.149766"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+No serializer found for resource: "Bearer must exist"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.08ms)
+Completed 422 Unprocessable Entity in 58ms (Views: 7.0ms | ActiveRecord: 7.6ms)
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 06:35:01.263676"], ["updated_at", "2018-04-25 06:35:01.263676"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 06:35:01.272038"], ["updated_at", "2018-04-25 06:35:01.272038"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+No serializer found for resource: "Bearer must exist"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.15ms)
+Completed 422 Unprocessable Entity in 36ms (Views: 4.7ms | ActiveRecord: 1.6ms)
+  [1m[35m (2.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 06:35:32.806210"], ["updated_at", "2018-04-25 06:35:32.806210"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 06:35:32.814984"], ["updated_at", "2018-04-25 06:35:32.814984"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 35ms (ActiveRecord: 1.7ms)
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 06:36:30.856943"], ["updated_at", "2018-04-25 06:36:30.856943"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 06:36:30.870741"], ["updated_at", "2018-04-25 06:36:30.870741"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 54ms (ActiveRecord: 2.0ms)
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 06:37:03.744728"], ["updated_at", "2018-04-25 06:37:03.744728"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 06:37:03.761099"], ["updated_at", "2018-04-25 06:37:03.761099"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 65ms (ActiveRecord: 1.8ms)
+  [1m[35m (2.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 06:37:37.266626"], ["updated_at", "2018-04-25 06:37:37.266626"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 06:37:37.293420"], ["updated_at", "2018-04-25 06:37:37.293420"]]
+  [1m[35mSQL (5.9ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 06:37:37.296216"], ["updated_at", "2018-04-25 06:37:37.296216"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.45ms)
+Completed 200 OK in 71ms (Views: 8.1ms | ActiveRecord: 7.8ms)
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 06:38:44.554906"], ["updated_at", "2018-04-25 06:38:44.554906"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 06:38:44.570119"], ["updated_at", "2018-04-25 06:38:44.570119"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 06:38:44.574438"], ["updated_at", "2018-04-25 06:38:44.574438"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.38ms)
+Completed 200 OK in 51ms (Views: 13.3ms | ActiveRecord: 1.8ms)
+  [1m[35m (6.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 06:41:14.381786"], ["updated_at", "2018-04-25 06:41:14.381786"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 06:41:14.394378"], ["updated_at", "2018-04-25 06:41:14.394378"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 06:41:14.396837"], ["updated_at", "2018-04-25 06:41:14.396837"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.62ms)
+Completed 200 OK in 44ms (Views: 8.9ms | ActiveRecord: 2.1ms)
+  [1m[35m (5.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 06:42:06.088217"], ["updated_at", "2018-04-25 06:42:06.088217"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 06:42:06.099706"], ["updated_at", "2018-04-25 06:42:06.099706"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 06:42:06.101377"], ["updated_at", "2018-04-25 06:42:06.101377"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.87ms)
+Completed 200 OK in 35ms (Views: 7.5ms | ActiveRecord: 1.7ms)
+  [1m[35m (1.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 06:42:45.359231"], ["updated_at", "2018-04-25 06:42:45.359231"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 06:42:45.371078"], ["updated_at", "2018-04-25 06:42:45.371078"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 06:42:45.372708"], ["updated_at", "2018-04-25 06:42:45.372708"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.54ms)
+Completed 200 OK in 38ms (Views: 8.3ms | ActiveRecord: 1.7ms)
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 06:44:47.250352"], ["updated_at", "2018-04-25 06:44:47.250352"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 06:44:47.260695"], ["updated_at", "2018-04-25 06:44:47.260695"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 06:44:47.262221"], ["updated_at", "2018-04-25 06:44:47.262221"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.44ms)
+Completed 200 OK in 32ms (Views: 5.5ms | ActiveRecord: 1.7ms)
+  [1m[35m (5.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+No serializer found for resource: "Bearer must exist"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.08ms)
+Completed 422 Unprocessable Entity in 22ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+No serializer found for resource: "Bearer must exist"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.06ms)
+Completed 422 Unprocessable Entity in 19ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+No serializer found for resource: "Bearer must exist"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.08ms)
+Completed 422 Unprocessable Entity in 32ms (Views: 7.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 06:56:18.160441"], ["updated_at", "2018-04-25 06:56:18.160441"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 06:56:18.172005"], ["updated_at", "2018-04-25 06:56:18.172005"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 06:56:18.173807"], ["updated_at", "2018-04-25 06:56:18.173807"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.63ms)
+Completed 200 OK in 45ms (Views: 14.1ms | ActiveRecord: 1.7ms)
+  [1m[35m (6.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 06:57:39.009740"], ["updated_at", "2018-04-25 06:57:39.009740"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 06:57:39.021767"], ["updated_at", "2018-04-25 06:57:39.021767"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 06:57:39.023418"], ["updated_at", "2018-04-25 06:57:39.023418"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.48ms)
+Completed 200 OK in 41ms (Views: 7.6ms | ActiveRecord: 2.1ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 06:57:57.455545"], ["updated_at", "2018-04-25 06:57:57.455545"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 06:57:57.469574"], ["updated_at", "2018-04-25 06:57:57.469574"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 06:57:57.472126"], ["updated_at", "2018-04-25 06:57:57.472126"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (1.15ms)
+Completed 200 OK in 54ms (Views: 15.1ms | ActiveRecord: 2.1ms)
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 06:59:26.491210"], ["updated_at", "2018-04-25 06:59:26.491210"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 06:59:26.507376"], ["updated_at", "2018-04-25 06:59:26.507376"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 06:59:26.509436"], ["updated_at", "2018-04-25 06:59:26.509436"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.76ms)
+Completed 200 OK in 43ms (Views: 8.6ms | ActiveRecord: 1.8ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 08:47:07.250026"], ["updated_at", "2018-04-25 08:47:07.250026"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.0ms)
+  [1m[35m (2.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 08:47:21.922702"], ["updated_at", "2018-04-25 08:47:21.922702"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+No serializer found for resource: "Market price must exist"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.08ms)
+Completed 422 Unprocessable Entity in 47ms (Views: 7.0ms | ActiveRecord: 1.1ms)
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 08:47:51.848747"], ["updated_at", "2018-04-25 08:47:51.848747"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+No serializer found for resource: "Market price must exist"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.06ms)
+Completed 422 Unprocessable Entity in 29ms (Views: 3.2ms | ActiveRecord: 1.1ms)
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 08:48:18.679397"], ["updated_at", "2018-04-25 08:48:18.679397"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+No serializer found for resource: "Market price must exist"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.13ms)
+Completed 422 Unprocessable Entity in 60ms (Views: 9.9ms | ActiveRecord: 1.2ms)
+  [1m[35m (5.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 08:48:49.608140"], ["updated_at", "2018-04-25 08:48:49.608140"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+No serializer found for resource: "Market price must exist"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.08ms)
+Completed 422 Unprocessable Entity in 65ms (Views: 7.2ms | ActiveRecord: 1.4ms)
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 08:50:53.822600"], ["updated_at", "2018-04-25 08:50:53.822600"]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.9ms)
+  [1m[35m (6.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 08:51:19.384453"], ["updated_at", "2018-04-25 08:51:19.384453"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+No serializer found for resource: "Market price must exist"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.09ms)
+Completed 422 Unprocessable Entity in 34ms (Views: 4.0ms | ActiveRecord: 1.2ms)
+  [1m[35m (2.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 08:53:03.536864"], ["updated_at", "2018-04-25 08:53:03.536864"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 08:53:03.547033"], ["updated_at", "2018-04-25 08:53:03.547033"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 08:53:03.548502"], ["updated_at", "2018-04-25 08:53:03.548502"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.51ms)
+Completed 200 OK in 35ms (Views: 7.3ms | ActiveRecord: 1.8ms)
+  [1m[35m (5.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 09:12:06.279393"], ["updated_at", "2018-04-25 09:12:06.279393"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 09:12:06.290169"], ["updated_at", "2018-04-25 09:12:06.290169"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 09:12:06.291690"], ["updated_at", "2018-04-25 09:12:06.291690"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.44ms)
+Completed 200 OK in 37ms (Views: 6.2ms | ActiveRecord: 1.6ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "bearers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "market_prices" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "currency" varchar, "value_cents" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "stocks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "bearer_id" integer, "market_price_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "deleted_at" datetime)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX "index_stocks_on_bearer_id" ON "stocks" ("bearer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_stocks_on_bearer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_stocks_on_bearer_id' AND type='index'
+[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX "index_stocks_on_deleted_at" ON "stocks" ("deleted_at")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_stocks_on_deleted_at' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_stocks_on_deleted_at' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_stocks_on_bearer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_stocks_on_bearer_id' AND type='index'
+[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX "index_stocks_on_market_price_id" ON "stocks" ("market_price_id")[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180425091307)[0m
+  [1m[35m (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20180424170854),
+(20180424170800),
+(20180424170815);
+
+[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-04-25 10:28:57.202084"], ["updated_at", "2018-04-25 10:28:57.202084"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:28:57.266838"], ["updated_at", "2018-04-25 10:28:57.266838"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:28:57.282294"], ["updated_at", "2018-04-25 10:28:57.282294"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:28:57.284686"], ["updated_at", "2018-04-25 10:28:57.284686"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.47ms)
+Completed 200 OK in 45ms (Views: 6.9ms | ActiveRecord: 2.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (2.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.2ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:30:03.508814"], ["updated_at", "2018-04-25 10:30:03.508814"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:30:03.520515"], ["updated_at", "2018-04-25 10:30:03.520515"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:30:03.523826"], ["updated_at", "2018-04-25 10:30:03.523826"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.42ms)
+Completed 200 OK in 46ms (Views: 10.0ms | ActiveRecord: 2.2ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:30:36.905190"], ["updated_at", "2018-04-25 10:30:36.905190"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:30:36.924751"], ["updated_at", "2018-04-25 10:30:36.924751"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:30:36.927534"], ["updated_at", "2018-04-25 10:30:36.927534"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.81ms)
+Completed 200 OK in 50ms (Views: 9.9ms | ActiveRecord: 1.9ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:33:25.249849"], ["updated_at", "2018-04-25 10:33:25.249849"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:33:25.271903"], ["updated_at", "2018-04-25 10:33:25.271903"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:33:25.274574"], ["updated_at", "2018-04-25 10:33:25.274574"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.35ms)
+Completed 200 OK in 58ms (Views: 9.0ms | ActiveRecord: 3.9ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (2.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:37:34.092434"], ["updated_at", "2018-04-25 10:37:34.092434"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:37:34.115251"], ["updated_at", "2018-04-25 10:37:34.115251"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:37:34.118342"], ["updated_at", "2018-04-25 10:37:34.118342"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.34ms)
+Completed 200 OK in 62ms (Views: 9.4ms | ActiveRecord: 2.7ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (5.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 1ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:39:44.132602"], ["updated_at", "2018-04-25 10:39:44.132602"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:39:44.152033"], ["updated_at", "2018-04-25 10:39:44.152033"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:39:44.155035"], ["updated_at", "2018-04-25 10:39:44.155035"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.43ms)
+Completed 200 OK in 52ms (Views: 12.2ms | ActiveRecord: 2.8ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (5.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:40:47.194124"], ["updated_at", "2018-04-25 10:40:47.194124"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:40:47.204387"], ["updated_at", "2018-04-25 10:40:47.204387"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:40:47.205887"], ["updated_at", "2018-04-25 10:40:47.205887"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.38ms)
+Completed 200 OK in 33ms (Views: 5.8ms | ActiveRecord: 1.7ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:44:58.857239"], ["updated_at", "2018-04-25 10:44:58.857239"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:44:58.867549"], ["updated_at", "2018-04-25 10:44:58.867549"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:44:58.868849"], ["updated_at", "2018-04-25 10:44:58.868849"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.42ms)
+Completed 200 OK in 32ms (Views: 5.2ms | ActiveRecord: 1.5ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:47:39.598797"], ["updated_at", "2018-04-25 10:47:39.598797"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:47:39.627808"], ["updated_at", "2018-04-25 10:47:39.627808"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:47:39.629648"], ["updated_at", "2018-04-25 10:47:39.629648"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.38ms)
+Completed 200 OK in 67ms (Views: 5.9ms | ActiveRecord: 2.5ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as HTML
+  Parameters: {"bearer"=>"invalid", "currency"=>"EUR", "name"=>"invalid", "value"=>"19.39"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:51:01.233945"], ["updated_at", "2018-04-25 10:51:01.233945"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:51:01.256326"], ["updated_at", "2018-04-25 10:51:01.256326"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:51:01.259033"], ["updated_at", "2018-04-25 10:51:01.259033"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.85ms)
+Completed 200 OK in 60ms (Views: 9.4ms | ActiveRecord: 2.7ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (6.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"invalid", "bearer"=>"invalid", "value"=>19.39, "currency"=>"EUR"}}
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:51:55.929745"], ["updated_at", "2018-04-25 10:51:55.929745"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:51:55.939856"], ["updated_at", "2018-04-25 10:51:55.939856"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:51:55.941304"], ["updated_at", "2018-04-25 10:51:55.941304"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.36ms)
+Completed 200 OK in 33ms (Views: 5.3ms | ActiveRecord: 1.6ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"invalid", "bearer"=>"invalid", "value"=>19.39, "currency"=>"EUR"}}
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 422 Unprocessable Entity in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:52:59.241707"], ["updated_at", "2018-04-25 10:52:59.241707"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:52:59.254480"], ["updated_at", "2018-04-25 10:52:59.254480"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:52:59.256629"], ["updated_at", "2018-04-25 10:52:59.256629"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.36ms)
+Completed 200 OK in 44ms (Views: 6.0ms | ActiveRecord: 2.2ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"invalid", "bearer"=>"invalid", "value"=>19.39, "currency"=>"EUR"}}
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:53:38.021964"], ["updated_at", "2018-04-25 10:53:38.021964"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:53:38.042976"], ["updated_at", "2018-04-25 10:53:38.042976"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:53:38.045155"], ["updated_at", "2018-04-25 10:53:38.045155"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.32ms)
+Completed 200 OK in 50ms (Views: 9.7ms | ActiveRecord: 1.8ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"invalid", "bearer"=>"invalid", "value"=>19.39, "currency"=>"EUR"}}
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:54:11.941117"], ["updated_at", "2018-04-25 10:54:11.941117"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:54:11.963512"], ["updated_at", "2018-04-25 10:54:11.963512"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:54:11.973063"], ["updated_at", "2018-04-25 10:54:11.973063"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.54ms)
+Completed 200 OK in 70ms (Views: 7.2ms | ActiveRecord: 2.4ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (6.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"invalid", "bearer"=>"invalid", "value"=>19.39, "currency"=>"EUR"}}
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:54:40.492636"], ["updated_at", "2018-04-25 10:54:40.492636"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:54:40.504690"], ["updated_at", "2018-04-25 10:54:40.504690"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:54:40.506742"], ["updated_at", "2018-04-25 10:54:40.506742"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.4ms)
+Completed 200 OK in 41ms (Views: 6.6ms | ActiveRecord: 1.8ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"invalid", "bearer"=>"invalid", "value"=>19.39, "currency"=>"EUR"}}
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 422 Unprocessable Entity in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:55:29.471478"], ["updated_at", "2018-04-25 10:55:29.471478"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:55:29.481655"], ["updated_at", "2018-04-25 10:55:29.481655"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:55:29.483329"], ["updated_at", "2018-04-25 10:55:29.483329"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.62ms)
+Completed 200 OK in 34ms (Views: 6.4ms | ActiveRecord: 1.7ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (5.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"invalid", "bearer"=>"invalid", "value"=>19.39, "currency"=>"EUR"}}
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:55:59.662896"], ["updated_at", "2018-04-25 10:55:59.662896"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:55:59.685523"], ["updated_at", "2018-04-25 10:55:59.685523"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:55:59.688482"], ["updated_at", "2018-04-25 10:55:59.688482"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (1.15ms)
+Completed 200 OK in 65ms (Views: 13.0ms | ActiveRecord: 2.1ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"invalid", "bearer"=>"invalid", "value"=>19.39, "currency"=>"EUR"}}
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 422 Unprocessable Entity in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:57:56.222518"], ["updated_at", "2018-04-25 10:57:56.222518"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:57:56.240752"], ["updated_at", "2018-04-25 10:57:56.240752"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:57:56.243450"], ["updated_at", "2018-04-25 10:57:56.243450"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.41ms)
+Completed 200 OK in 53ms (Views: 12.0ms | ActiveRecord: 2.1ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"invalid", "bearer"=>"invalid", "value"=>19.39, "currency"=>"EUR"}}
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:58:41.881068"], ["updated_at", "2018-04-25 10:58:41.881068"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:58:41.899150"], ["updated_at", "2018-04-25 10:58:41.899150"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:58:41.901908"], ["updated_at", "2018-04-25 10:58:41.901908"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.47ms)
+Completed 200 OK in 48ms (Views: 9.6ms | ActiveRecord: 1.8ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (5.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"invalid", "bearer"=>"invalid", "value"=>19.39, "currency"=>"EUR"}}
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+Unpermitted parameters: bearer, value
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:59:40.502009"], ["updated_at", "2018-04-25 10:59:40.502009"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:59:40.521449"], ["updated_at", "2018-04-25 10:59:40.521449"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:59:40.524153"], ["updated_at", "2018-04-25 10:59:40.524153"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.76ms)
+Completed 200 OK in 53ms (Views: 10.1ms | ActiveRecord: 1.9ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"invalid", "bearer_name"=>"invalid", "value_cents"=>19.39, "currency"=>"EUR"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 10:59:57.052520"], ["updated_at", "2018-04-25 10:59:57.052520"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 10:59:57.074151"], ["updated_at", "2018-04-25 10:59:57.074151"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 10:59:57.076068"], ["updated_at", "2018-04-25 10:59:57.076068"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.35ms)
+Completed 200 OK in 60ms (Views: 5.0ms | ActiveRecord: 2.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"invalid", "bearer_name"=>"invalid", "value_cents"=>19.39, "currency"=>"EUR"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 422 Unprocessable Entity in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"20.00", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-25 11:01:02.715583"], ["updated_at", "2018-04-25 11:01:02.715583"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-25 11:01:02.726252"], ["updated_at", "2018-04-25 11:01:02.726252"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-25 11:01:02.728258"], ["updated_at", "2018-04-25 11:01:02.728258"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Stock (0.32ms)
+Completed 200 OK in 33ms (Views: 4.6ms | ActiveRecord: 1.7ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (2.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"invalid", "bearer_name"=>"invalid", "value_cents"=>19.39, "currency"=>"EUR"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m

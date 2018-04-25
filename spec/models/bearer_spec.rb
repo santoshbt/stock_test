@@ -19,6 +19,10 @@ RSpec.describe Bearer, type: :model do
       @bearer.name = nil
       expect(@bearer).to_not be_valid
     end
+
+    it "has a unique name" do
+      should validate_uniqueness_of(:name)
+    end
   end
 
   describe "Association" do
