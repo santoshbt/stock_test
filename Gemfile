@@ -40,7 +40,6 @@ gem 'annotate'
 gem 'active_model_serializers'
 
 group :development, :test do
-  gem 'faker'
   gem 'pry'
   gem 'pry-nav'
   gem 'rspec-rails'

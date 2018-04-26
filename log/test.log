@@ -19257,3 +19257,333 @@ Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms)
   [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock Company 1"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:22:38.902125"], ["updated_at", "2018-04-26 06:22:38.902125"]]
   [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
   [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (6.3ms)[0m  [1m[31mDELETE FROM "bearers";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'bearers';[0m
+  [1m[35m (0.8ms)[0m  [1m[31mDELETE FROM "market_prices";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'market_prices';[0m
+  [1m[35m (1.0ms)[0m  [1m[31mDELETE FROM "stocks";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'stocks';[0m
+  [1m[35m (0.9ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-26 06:30:56.644575"], ["updated_at", "2018-04-26 06:30:56.644575"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1578], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1578], ["created_at", "2018-04-26 06:30:56.655123"], ["updated_at", "2018-04-26 06:30:56.655123"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock 0"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.669553"], ["updated_at", "2018-04-26 06:30:56.669553"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock 1"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.672616"], ["updated_at", "2018-04-26 06:30:56.672616"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock 2"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.674717"], ["updated_at", "2018-04-26 06:30:56.674717"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock 3"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.676698"], ["updated_at", "2018-04-26 06:30:56.676698"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock 4"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.679741"], ["updated_at", "2018-04-26 06:30:56.679741"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock 5"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.682841"], ["updated_at", "2018-04-26 06:30:56.682841"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock 6"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.685402"], ["updated_at", "2018-04-26 06:30:56.685402"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock 7"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.687711"], ["updated_at", "2018-04-26 06:30:56.687711"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock 8"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.690953"], ["updated_at", "2018-04-26 06:30:56.690953"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock 9"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.693187"], ["updated_at", "2018-04-26 06:30:56.693187"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by StocksController#index as JSON
+  Parameters: {"stock"=>{}}
+  [1m[36mStock Load (0.2ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT "bearers".* FROM "bearers" WHERE "bearers"."id" = 1[0m
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT "market_prices".* FROM "market_prices" WHERE "market_prices"."id" = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.35ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.4ms)
+  [1m[35m (5.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"ABC Company", "bearer_name"=>"Tina Rudwik", "value_cents"=>"2000", "currency"=>"EUR"}}
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.2ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Tina Rudwik"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tina Rudwik"], ["created_at", "2018-04-26 06:30:56.746916"], ["updated_at", "2018-04-26 06:30:56.746916"]]
+  [1m[36mMarketPrice Load (0.8ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 2000], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 2000], ["created_at", "2018-04-26 06:30:56.752005"], ["updated_at", "2018-04-26 06:30:56.752005"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "ABC Company"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.753543"], ["updated_at", "2018-04-26 06:30:56.753543"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered StockSerializer with ActiveModelSerializers::Adapter::Attributes (0.42ms)
+Completed 200 OK in 15ms (Views: 1.3ms | ActiveRecord: 2.0ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Processing by StocksController#create as JSON
+  Parameters: {"stock"=>{"name"=>"invalid", "bearer_name"=>"invalid", "value_cents"=>19.39, "currency"=>"EUR"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 422 Unprocessable Entity in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-26 06:30:56.787081"], ["updated_at", "2018-04-26 06:30:56.787081"]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1578], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1578], ["created_at", "2018-04-26 06:30:56.798941"], ["updated_at", "2018-04-26 06:30:56.798941"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock Company 1"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.799960"], ["updated_at", "2018-04-26 06:30:56.799960"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by StocksController#update as JSON
+  Parameters: {"stock"=>{"bearer_name"=>"Jon"}, "id"=>"1"}
+  [1m[36mStock Load (0.2ms)[0m  [1m[34mSELECT  "stocks".* FROM "stocks" WHERE "stocks"."deleted_at" IS NULL AND "stocks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.0ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Jon"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Jon"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jon"], ["created_at", "2018-04-26 06:30:56.806362"], ["updated_at", "2018-04-26 06:30:56.806362"]]
+  [1m[36mMarketPrice Load (0.1ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "stocks" SET "bearer_id" = ?, "updated_at" = ? WHERE "stocks"."id" = ?[0m  [["bearer_id", 2], ["updated_at", "2018-04-26 06:30:56.810469"], ["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered StockSerializer with ActiveModelSerializers::Adapter::Attributes (1.05ms)
+Completed 200 OK in 12ms (Views: 1.8ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-26 06:30:56.821299"], ["updated_at", "2018-04-26 06:30:56.821299"]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1578], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1578], ["created_at", "2018-04-26 06:30:56.823239"], ["updated_at", "2018-04-26 06:30:56.823239"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock Company 1"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.824030"], ["updated_at", "2018-04-26 06:30:56.824030"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by StocksController#update as JSON
+  Parameters: {"stock"=>{"currency"=>"USD", "value_cents"=>3000}, "id"=>"1"}
+  [1m[36mStock Load (0.0ms)[0m  [1m[34mSELECT  "stocks".* FROM "stocks" WHERE "stocks"."deleted_at" IS NULL AND "stocks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Load (0.0ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? ORDER BY "market_prices"."id" ASC LIMIT ?[0m  [["currency", "USD"], ["value_cents", 3000], ["LIMIT", 1]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 3000], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 3000], ["created_at", "2018-04-26 06:30:56.829120"], ["updated_at", "2018-04-26 06:30:56.829120"]]
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "stocks" SET "market_price_id" = ?, "updated_at" = ? WHERE "stocks"."id" = ?[0m  [["market_price_id", 2], ["updated_at", "2018-04-26 06:30:56.831948"], ["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered StockSerializer with ActiveModelSerializers::Adapter::Attributes (0.88ms)
+Completed 200 OK in 9ms (Views: 1.8ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-26 06:30:56.840981"], ["updated_at", "2018-04-26 06:30:56.840981"]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1578], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1578], ["created_at", "2018-04-26 06:30:56.842945"], ["updated_at", "2018-04-26 06:30:56.842945"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock Company 1"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.843996"], ["updated_at", "2018-04-26 06:30:56.843996"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "Peter"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Peter"], ["created_at", "2018-04-26 06:30:56.847815"], ["updated_at", "2018-04-26 06:30:56.847815"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by StocksController#update as JSON
+  Parameters: {"stock"=>{"bearer_name"=>"Peter"}, "id"=>"1"}
+  [1m[36mStock Load (0.0ms)[0m  [1m[34mSELECT  "stocks".* FROM "stocks" WHERE "stocks"."deleted_at" IS NULL AND "stocks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.0ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" WHERE "bearers"."name" = ? ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["name", "Peter"], ["LIMIT", 1]]
+  [1m[36mMarketPrice Load (0.0ms)[0m  [1m[34mSELECT  "market_prices".* FROM "market_prices" WHERE "market_prices"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "stocks" SET "bearer_id" = ?, "updated_at" = ? WHERE "stocks"."id" = ?[0m  [["bearer_id", 2], ["updated_at", "2018-04-26 06:30:56.853629"], ["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered StockSerializer with ActiveModelSerializers::Adapter::Attributes (0.62ms)
+Completed 200 OK in 6ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-26 06:30:56.861469"], ["updated_at", "2018-04-26 06:30:56.861469"]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1578], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1578], ["created_at", "2018-04-26 06:30:56.863786"], ["updated_at", "2018-04-26 06:30:56.863786"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock Company 1"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.864610"], ["updated_at", "2018-04-26 06:30:56.864610"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by StocksController#destroy as JSON
+  Parameters: {"id"=>"1", "stock"=>{}}
+  [1m[36mStock Load (0.1ms)[0m  [1m[34mSELECT  "stocks".* FROM "stocks" WHERE "stocks"."deleted_at" IS NULL AND "stocks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "stocks" SET "deleted_at" = '2018-04-26 06:30:56.869591', "updated_at" = '2018-04-26 06:30:56.869614' WHERE "stocks"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "bearers"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "market_prices"[0m
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-26 06:30:56.879945"], ["updated_at", "2018-04-26 06:30:56.879945"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? AND ("bearers"."id" != ?) LIMIT ?[0m  [["name", "John"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-26 06:30:56.886371"], ["updated_at", "2018-04-26 06:30:56.886371"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? AND ("bearers"."id" != ?) LIMIT ?[0m  [["name", "Tina"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-26 06:30:56.891604"], ["updated_at", "2018-04-26 06:30:56.891604"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" IS NULL AND ("bearers"."id" != ?) LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-26 06:30:56.902955"], ["updated_at", "2018-04-26 06:30:56.902955"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBearer Load (0.1ms)[0m  [1m[34mSELECT  "bearers".* FROM "bearers" ORDER BY "bearers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[36mBearer Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "jOHN"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-26 06:30:56.910415"], ["updated_at", "2018-04-26 06:30:56.910415"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1578], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1578], ["created_at", "2018-04-26 06:30:56.916238"], ["updated_at", "2018-04-26 06:30:56.916238"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["id", 1], ["value_cents", 1578], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1578], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1578], ["created_at", "2018-04-26 06:30:56.922968"], ["updated_at", "2018-04-26 06:30:56.922968"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" IS NULL AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["id", 1], ["value_cents", 2], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1578], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1578], ["created_at", "2018-04-26 06:30:56.929197"], ["updated_at", "2018-04-26 06:30:56.929197"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2530], ["created_at", "2018-04-26 06:30:56.931842"], ["updated_at", "2018-04-26 06:30:56.931842"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["value_cents", 2290], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "USD"], ["value_cents", 2290], ["created_at", "2018-04-26 06:30:56.933795"], ["updated_at", "2018-04-26 06:30:56.933795"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND ("market_prices"."id" != ?) AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "USD"], ["id", 3], ["value_cents", 2530], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mMarketPrice Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1578], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1578], ["created_at", "2018-04-26 06:30:56.940454"], ["updated_at", "2018-04-26 06:30:56.940454"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-26 06:30:56.948087"], ["updated_at", "2018-04-26 06:30:56.948087"]]
+  [1m[36mMarketPrice Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1578], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1578], ["created_at", "2018-04-26 06:30:56.951291"], ["updated_at", "2018-04-26 06:30:56.951291"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock Company 1"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.952989"], ["updated_at", "2018-04-26 06:30:56.952989"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-26 06:30:56.963313"], ["updated_at", "2018-04-26 06:30:56.963313"]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1578], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1578], ["created_at", "2018-04-26 06:30:56.966616"], ["updated_at", "2018-04-26 06:30:56.966616"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock Company 1"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.967630"], ["updated_at", "2018-04-26 06:30:56.967630"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-26 06:30:56.973394"], ["updated_at", "2018-04-26 06:30:56.973394"]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1578], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1578], ["created_at", "2018-04-26 06:30:56.975836"], ["updated_at", "2018-04-26 06:30:56.975836"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock Company 1"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.977097"], ["updated_at", "2018-04-26 06:30:56.977097"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-26 06:30:56.985541"], ["updated_at", "2018-04-26 06:30:56.985541"]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1578], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1578], ["created_at", "2018-04-26 06:30:56.987424"], ["updated_at", "2018-04-26 06:30:56.987424"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock Company 1"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.988227"], ["updated_at", "2018-04-26 06:30:56.988227"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBearer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bearers" WHERE "bearers"."name" = ? LIMIT ?[0m  [["name", "John"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "bearers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "John"], ["created_at", "2018-04-26 06:30:56.995059"], ["updated_at", "2018-04-26 06:30:56.995059"]]
+  [1m[36mMarketPrice Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "market_prices" WHERE "market_prices"."currency" = ? AND "market_prices"."value_cents" = ? LIMIT ?[0m  [["currency", "EUR"], ["value_cents", 1578], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "market_prices" ("currency", "value_cents", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["currency", "EUR"], ["value_cents", 1578], ["created_at", "2018-04-26 06:30:56.997429"], ["updated_at", "2018-04-26 06:30:56.997429"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("name", "bearer_id", "market_price_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stock Company 1"], ["bearer_id", 1], ["market_price_id", 1], ["created_at", "2018-04-26 06:30:56.998225"], ["updated_at", "2018-04-26 06:30:56.998225"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[31mrollback transaction[0m
