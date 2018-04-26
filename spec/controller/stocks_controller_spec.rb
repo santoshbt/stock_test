@@ -6,14 +6,19 @@ RSpec.describe StocksController, type: :controller do
   let(:second_bearer) {FactoryGirl.create(:second_bearer) }
   let(:market_price) {FactoryGirl.create(:first_market_price) }
 
+  def validate_parse_response response
+    expect(response).to have_http_status(200)
+    JSON.parse(response.body)
+  end
+
   describe "GET /stocks/" do
     it "should return list with stocks" do
       10.times {|stock_index| FactoryGirl.create(:stock, name: "Stock #{stock_index}",
                                     bearer: bearer, market_price: market_price) }
 
       get :index, as: :json
-      expect(response).to have_http_status(200)
-      json_data = JSON.parse(response.body)
+
+      json_data = validate_parse_response response
       expect(json_data[0]["name"]).to eq("Stock 0")
 
       expect(json_data[0]["bearer"]["id"]).to eq(1)
@@ -31,19 +36,16 @@ RSpec.describe StocksController, type: :controller do
   describe "POST /stocks/" do
     context "with valid data" do
       it "should return stock and 200 OK" do
-        stock_params = { stock: { name: "ABC Company", bearer_name: "Tina Rudwik", value_cents: "2000", currency: "EUR"} }
+        stock_params = { stock: { name: "ABC Company", bearer_name: "Tina Rudwik", value_cents: 2000, currency: "EUR"} }
         post :create, as: :json, params: stock_params
 
-        expect(response).to have_http_status(200)
+        json_data = validate_parse_response response
 
-        json_data = JSON.parse(response.body)
         expect(json_data["name"]).to eq(stock_params[:stock][:name])
-
         expect(json_data["bearer"]["id"]).to be(1)
         expect(json_data["bearer"]["name"]).to eq(stock_params[:stock][:bearer_name])
-
         expect(json_data["market_price"]["id"]).to be(1)
-        expect(json_data["market_price"]["value_cents"]).to eq(2000)   #### Check it
+        expect(json_data["market_price"]["value_cents"]).to eq(stock_params[:stock][:value_cents])
         expect(json_data["market_price"]["currency"]).to eq(stock_params[:stock][:currency])
 
         expect(Stock.count).to eq(1)
@@ -72,9 +74,7 @@ RSpec.describe StocksController, type: :controller do
         current_stock = stock
         stock_params = { stock: {bearer_name: 'Jon'}, id: current_stock.id }
         patch :update, method: :patch, as: :json, params: stock_params
-
-        expect(response).to have_http_status(200)
-        json_data = JSON.parse(response.body)
+        json_data = validate_parse_response response
 
         expect(json_data["name"]).to eq(current_stock.name)
         expect(json_data["bearer"]["name"]).to eq(stock_params[:stock][:bearer_name])
@@ -88,12 +88,11 @@ RSpec.describe StocksController, type: :controller do
         current_stock = stock
         stock_params = { stock: {currency: "USD", value_cents: 3000 }, id: current_stock.id }
         patch :update, method: :patch, as: :json, params: stock_params
-        expect(response).to have_http_status(200)
-        json_data = JSON.parse(response.body)
+        json_data = validate_parse_response response
 
         expect(json_data["name"]).to eq(current_stock.name)
         expect(json_data["bearer"]["name"]).to eq(current_stock.bearer.name)
-        expect(json_data["market_price"]["value_cents"]).to eq(3000)
+        expect(json_data["market_price"]["value_cents"]).to eq(stock_params[:stock][:value_cents])
         expect(json_data["market_price"]["currency"]).to eq(stock_params[:stock][:currency])
       end
     end
@@ -105,8 +104,7 @@ RSpec.describe StocksController, type: :controller do
         stock_params = { stock: {bearer_name: other_bearer.name}, id: current_stock.id }
 
         patch :update, method: :patch, as: :json, params: stock_params
-        expect(response).to have_http_status(200)
-        json_data = JSON.parse(response.body)
+        json_data = validate_parse_response response
 
         expect(json_data["name"]).to eq(current_stock.name)
         expect(json_data["bearer"]["name"]).to eq(stock_params[:stock][:bearer_name])
@@ -124,7 +122,6 @@ RSpec.describe StocksController, type: :controller do
 
         delete :destroy, method: :delete, as: :json, params: stock_params
         expect(response).to have_http_status(200)
-        json_data = JSON.parse(response.body)
 
         expect(Stock.count).to eq(0)
         expect(Bearer.count).to eq(1)

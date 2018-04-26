@@ -256,3 +256,171 @@ Migrating to AddDeletedAtToStocks (20180425091307)
             FROM sqlite_temp_master
             WHERE name='index_stocks_on_bearer_id' AND type='index'
 [0m
+Started GET "/stocks" for 127.0.0.1 at 2018-04-26 12:25:42 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StocksController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 15ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stocks" for 127.0.0.1 at 2018-04-26 12:31:02 +0530
+Processing by StocksController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stocks" for 127.0.0.1 at 2018-04-26 12:32:13 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StocksController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 16ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stocks" for 127.0.0.1 at 2018-04-26 12:33:54 +0530
+Processing by StocksController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stocks" for 127.0.0.1 at 2018-04-26 12:34:03 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StocksController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 18ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stocks" for 127.0.0.1 at 2018-04-26 12:34:21 +0530
+Processing by StocksController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.3ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 4ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stocks" for 127.0.0.1 at 2018-04-26 12:34:42 +0530
+Processing by StocksController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stocks" for 127.0.0.1 at 2018-04-26 12:38:48 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StocksController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.21ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 18ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stocks" for 127.0.0.1 at 2018-04-26 12:45:06 +0530
+Processing by StocksController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 12:45:36 +0530
+Processing by StocksController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :ensure_json rendered or redirected
+Completed 406 Not Acceptable in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stocks" for 127.0.0.1 at 2018-04-26 12:53:08 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StocksController#index as HTML
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `ensure_json' for #<StocksController:0x00007fe7918e8390>):
+  
+activesupport (5.0.3) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+activesupport (5.0.3) lib/active_support/callbacks.rb:169:in `block (2 levels) in halting'
+actionpack (5.0.3) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.0.3) lib/active_support/callbacks.rb:170:in `block in halting'
+activesupport (5.0.3) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.3) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.3) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.3) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.3) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.3) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.3) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.3) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.3) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.3) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.3) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.3) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.3) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.2) lib/rack/etag.rb:25:in `call'
+rack (2.0.2) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.2) lib/rack/head.rb:12:in `call'
+rack (2.0.2) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.2) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.3) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.2) lib/rack/method_override.rb:22:in `call'
+rack (2.0.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.2) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/santoshturamari/.rvm/gems/ruby-2.4.2@2.4.2_rails5/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/santoshturamari/.rvm/gems/ruby-2.4.2@2.4.2_rails5/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.4.2@2.4.2_rails5/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /Users/santoshturamari/.rvm/gems/ruby-2.4.2@2.4.2_rails5/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.4.2@2.4.2_rails5/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/santoshturamari/.rvm/gems/ruby-2.4.2@2.4.2_rails5/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.4.2@2.4.2_rails5/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/santoshturamari/.rvm/gems/ruby-2.4.2@2.4.2_rails5/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (196.2ms)
+Started GET "/stocks" for 127.0.0.1 at 2018-04-26 12:54:34 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StocksController#index as HTML
+  [1m[36mStock Load (0.2ms)[0m  [1m[34mSELECT "stocks".* FROM "stocks" WHERE "stocks"."deleted_at" IS NULL[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.16ms)
+Completed 200 OK in 19ms (Views: 8.8ms | ActiveRecord: 0.4ms)
+
+
