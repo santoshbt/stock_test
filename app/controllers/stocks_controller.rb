@@ -26,6 +26,14 @@ class StocksController < ApplicationController
     end
   end
 
+  def destroy
+    if @stock && @stock.destroy
+      render json: { message: "Stock Deleted"}, status: 200
+    else
+      render json: {error: @stock.errors.full_messages}, status: :unprocessable_entity
+    end
+  end
+
   private
   def stock_params
     params.require(:stock).permit(:name, :bearer_name, :currency, :value_cents)

@@ -1,7 +1,7 @@
 FactoryGirl.define do
-  factory :market_price do
+  factory :market_price, class: MarketPrice do
     trait :first_price do
-      value_cents 1578
+      value_cents "1578"
       currency "EUR"
     end
 

@@ -18,9 +18,7 @@ class Stock < ApplicationRecord
   end
 
   def set_market_price
-    money = self.dollar_to_cents(self.value_cents, self.currency)
-    value_cents, currency = money[:value_cents], money[:currency]
-    
+    currency, value_cents = self.currency, self.value_cents
     if currency && value_cents
       self.market_price = MarketPrice.where(currency: currency, value_cents: value_cents)
                                      .first_or_create
