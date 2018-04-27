@@ -1,5 +1,5 @@
 class StocksController < ApplicationController
-  before_action :set_stock, only: [:show, :update, :destroy]
+  before_action :set_stock, only: [:update, :destroy]
   def index
     @stocks = Stock.includes(:bearer, :market_price)
     render json: @stocks, status: 200
@@ -28,7 +28,7 @@ class StocksController < ApplicationController
 
   def destroy
     if @stock && @stock.destroy
-      render json: { message: "Stock Deleted"}, status: 200
+      render json: { message: "Stock is Deleted"}, status: 200
     else
       render json: {error: @stock.errors.full_messages}, status: :unprocessable_entity
     end

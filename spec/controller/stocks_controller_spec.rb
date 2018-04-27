@@ -121,13 +121,13 @@ RSpec.describe StocksController, type: :controller do
         stock_params = { id: current_stock.id }
 
         delete :destroy, method: :delete, as: :json, params: stock_params
-        expect(response).to have_http_status(200)
+        json_data = validate_parse_response response
 
+        expect(json_data["message"]).to eq("Stock is Deleted")
         expect(Stock.count).to eq(0)
         expect(Bearer.count).to eq(1)
         expect(MarketPrice.count).to eq(1)
       end
     end
   end
-
 end
