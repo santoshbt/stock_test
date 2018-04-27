@@ -1,6 +1,5 @@
 class Stock < ApplicationRecord
   acts_as_paranoid
-  include Monetize
 
   belongs_to :bearer
   belongs_to :market_price
