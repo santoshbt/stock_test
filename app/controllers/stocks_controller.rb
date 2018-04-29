@@ -39,7 +39,7 @@ class StocksController < ApplicationController
       recovered_stock = Stock.restore(params[:id]).first
       render json: { message: "#{recovered_stock.name} is recovered"}, status: 200
     rescue ActiveRecord::RecordNotFound => e
-      render json: {error: "Sorry stock is not available"}, status: :unprocessable_entity
+      render json: {error: "Sorry stock is not available"}, status: 404
     end
   end
 

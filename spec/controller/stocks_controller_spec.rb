@@ -152,7 +152,7 @@ RSpec.describe StocksController, type: :controller do
         stock_params = { id: deleted_stock.id }
 
         get :recover, method: :get,as: :json, params: stock_params
-        expect(response).to have_http_status(422)
+        expect(response).to have_http_status(404)
         json_data = JSON.parse(response.body)
 
         expect(json_data["error"]).to eq("Sorry stock is not available")
