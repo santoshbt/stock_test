@@ -34,6 +34,15 @@ class StocksController < ApplicationController
     end
   end
 
+  def recover
+    begin
+      recovered_stock = Stock.restore(params[:id]).first
+      render json: { message: "#{recovered_stock.name} is recovered"}, status: 200
+    rescue ActiveRecord::RecordNotFound => e
+      render json: {error: "Sorry stock is not available"}, status: :unprocessable_entity
+    end
+  end
+
   private
   def stock_params
     params.require(:stock).permit(:name, :bearer_name, :currency, :value_cents)

@@ -130,4 +130,33 @@ RSpec.describe StocksController, type: :controller do
       end
     end
   end
+
+  describe "GET  /stocks/:id/recover" do
+    context "should be able to see the soft deleted stock" do
+      let(:deleted_stock) {FactoryGirl.create(:deleted_stock) }
+
+      it "should retrieve the stock based on id which is marked as deleted" do
+        stock_params = { id: deleted_stock.id }
+
+        get :recover, method: :get,as: :json, params: stock_params
+        json_data = validate_parse_response response
+
+        expect(json_data["message"]).to eq("#{deleted_stock.name} is recovered")
+      end
+    end
+
+    context "should not be able to see the soft deleted stock" do
+      let(:deleted_stock) {FactoryGirl.create(:stock) }
+
+      it "should retrieve the stock based on id which is marked as deleted" do
+        stock_params = { id: deleted_stock.id }
+
+        get :recover, method: :get,as: :json, params: stock_params
+        expect(response).to have_http_status(422)
+        json_data = JSON.parse(response.body)
+
+        expect(json_data["error"]).to eq("Sorry stock is not available")
+      end
+    end
+  end
 end
