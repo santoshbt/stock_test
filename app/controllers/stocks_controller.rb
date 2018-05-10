@@ -8,7 +8,7 @@ class StocksController < ApplicationController
   def create
     unless stock_params.values.include? "invalid"
       @stock = Stock.new stock_params
-      if @stock.save
+      if @stock.save!
         render json: @stock, status: 200
       else
         render json: {error: @stock.errors.full_messages}, status: :unprocessable_entity

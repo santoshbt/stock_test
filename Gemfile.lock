@@ -55,6 +55,7 @@ GEM
       activerecord (>= 2.3.0)
       rake (>= 0.8.7)
     arel (7.1.4)
+    awesome_print (1.8.0)
     bindex (0.5.0)
     builder (3.2.3)
     case_transform (0.2)
@@ -77,8 +78,6 @@ GEM
     factory_girl_rails (4.8.0)
       factory_girl (~> 4.8.0)
       railties (>= 3.0.0)
-    faker (1.8.7)
-      i18n (>= 0.7)
     ffi (1.9.18)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
@@ -221,10 +220,10 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   annotate
+  awesome_print
   coffee-rails (~> 4.2)
   database_cleaner
   factory_girl_rails
-  faker
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)

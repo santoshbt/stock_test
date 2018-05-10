@@ -17,16 +17,17 @@ RSpec.describe StocksController, type: :controller do
                                     bearer: bearer, market_price: market_price) }
 
       get :index, as: :json
+      # ap response.body.inspect
 
       json_data = validate_parse_response response
-      expect(json_data[0]["name"]).to eq("Stock 0")
+      expect(json_data[4]["name"]).to eq("Stock 4")
 
-      expect(json_data[0]["bearer"]["id"]).to eq(1)
-      expect(json_data[0]["bearer"]["name"]).to eq("John")
+      expect(json_data[4]["bearer"]["id"]).to eq(1)
+      expect(json_data[4]["bearer"]["name"]).to eq("John")
 
-      expect(json_data[0]["market_price"]["id"]).to eq(1)
-      expect(json_data[0]["market_price"]["currency"]).to eq("EUR")
-      expect(json_data[0]["market_price"]["value_cents"]).to eq(1578)
+      expect(json_data[4]["market_price"]["id"]).to eq(1)
+      expect(json_data[4]["market_price"]["currency"]).to eq("EUR")
+      expect(json_data[4]["market_price"]["value_cents"]).to eq(1578)
 
       expect(json_data.count).to eq(10)
 
@@ -132,6 +133,7 @@ RSpec.describe StocksController, type: :controller do
   end
 
   describe "GET  /stocks/:id/recover" do
+    #### The deleted stock is retrieved
     context "should be able to see the soft deleted stock" do
       let(:deleted_stock) {FactoryGirl.create(:deleted_stock) }
 
@@ -145,10 +147,11 @@ RSpec.describe StocksController, type: :controller do
       end
     end
 
+    ### Since the deleted stock is retrieved, there is no more a deleted stock. Hence it returns a 404
     context "should not be able to see the soft deleted stock" do
       let(:deleted_stock) {FactoryGirl.create(:stock) }
 
-      it "should retrieve the stock based on id which is marked as deleted" do
+      it "should not retrieve the stock based on id which is marked as deleted" do
         stock_params = { id: deleted_stock.id }
 
         get :recover, method: :get,as: :json, params: stock_params
@@ -159,4 +162,8 @@ RSpec.describe StocksController, type: :controller do
       end
     end
   end
+
+  # describe "GET /stock/history" do
+  #   context "should be "
+  # end
 end

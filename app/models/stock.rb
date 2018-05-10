@@ -7,20 +7,14 @@ class Stock < ApplicationRecord
   validates :name, presence: true
   attr_accessor :bearer_name, :currency, :value_cents
 
-  before_validation :set_bearer, :set_market_price
+  before_validation :set_attributes
 
   protected
 
-  def set_bearer
-    bearer_name = self.bearer_name
-    self.bearer = Bearer.where(name: bearer_name).first_or_create unless bearer_name.blank?
-  end
-
-  def set_market_price
-    currency, value_cents = self.currency, self.value_cents
-    if currency && value_cents
-      self.market_price = MarketPrice.where(currency: currency, value_cents: value_cents)
-                                     .first_or_create
-    end
+  def set_attributes
+    StockAttrs.new({bearer_name: bearer_name,
+                    currency: currency,
+                    value_cents: value_cents,
+                    stock: self}).set_sttributes
   end
 end

@@ -38,6 +38,7 @@ gem "paranoia", "~> 2.2"
 gem 'money-rails'
 gem 'annotate'
 gem 'active_model_serializers'
+gem 'awesome_print'
 
 group :development, :test do
   gem 'pry'
